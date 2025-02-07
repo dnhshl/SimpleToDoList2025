@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SimpleToDo</string>
+    <string name="mainScreenTitle">My ToDo List</string>
+    <string name="mainScreenLabel">Home</string>
+    <string name="screen2Title">Screen2</string>
+    <string name="screen2Label">screen2</string>
+    <string name="screen3Title">Screen 3</string>
+    <string name="screen3Label">screen3</string>
+    <string name="FullScreen1Title">Fullscreen 1</string>
+    <string name="FullScreen2Title">Fullscreen2</string>
+    <string name="menuItem1">Menu Item 1</string>
+    <string name="menuItem2">Menu Item 2</string>
+    <string name="menuItem3">Info</string>
+    <string name="emptyString" />
+    <string name="enterTitleLabel">Titel</string>
+    <string name="enterSubjectLabel">Subject</string>
+    <string name="dismissButton">Abbruch</string>
+    <string name="confirmButton">OK</string>
+    <string name="editToDoTitle">Edit ToDo</string>
+    <string name="deleteLabel">lösche</string>
+    <string name="editLabel">bearbeite</string>
+</resources>
