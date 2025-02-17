@@ -53,6 +53,9 @@ fun MainScreen(
     val pState by viewModel.pState.collectAsState()
     val toDoList = pState.toDoList
 
+    val state by viewModel.state.collectAsState()
+    val selectedToDo = state.selectedToDo ?: ToDoItem()
+
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween,
@@ -68,8 +71,8 @@ fun MainScreen(
             items(toDoList) {todo ->
                 ListItemCard(
                     todo = todo,
-                    isSelected = false,
-                    onItemClick = { },
+                    isSelected = (selectedToDo == todo),
+                    onItemClick = { viewModel.setSelectedToDo(todo) },
                     onDeleteClick = { viewModel.removeFromList(todo) },
                     onEditClick = {
                         viewModel.setCurrentToDo(todo)

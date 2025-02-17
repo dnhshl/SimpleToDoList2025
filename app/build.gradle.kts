@@ -10,7 +10,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.simpletodo"
+        applicationId = "com.example.simpletimer"
         minSdk = 29
         targetSdk = 35
         versionCode = 1

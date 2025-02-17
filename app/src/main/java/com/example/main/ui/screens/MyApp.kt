@@ -19,7 +19,9 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.main.model.MainViewModel
 import com.example.main.model.ToDoItem
+import com.example.main.model.randomDateString
 import com.example.main.model.randomSubject
+import com.example.main.model.randomTimeString
 import com.example.main.model.randomTitle
 import com.example.main.ui.navigation.MyMenu
 import com.example.main.ui.navigation.MyNavBar
@@ -52,7 +54,6 @@ fun MyApp() {
                     onClick = {
                         viewModel.setCurrentToDo(ToDoItem())
                         navController.navigate(MyScreens.EditToDo.route)
-                        //viewModel.addToList(ToDoItem(title = randomTitle(), subject = randomSubject()))
                     }
                 ) {
                     Icon(Icons.Filled.Add, contentDescription = "Add")

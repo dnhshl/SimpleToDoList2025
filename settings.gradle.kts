@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MultiScreenNavTemplate"
+rootProject.name = "SimpleTimer 2025"
 include(":app")
  

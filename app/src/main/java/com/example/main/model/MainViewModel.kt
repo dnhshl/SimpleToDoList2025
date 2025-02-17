@@ -60,6 +60,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     // ------------------------------------------------------------------------------
 
     fun addToList(todo: ToDoItem) {
+        // selected ToDo updaten, falls es geändert wurde
+        val selectedToDo = _state.value.selectedToDo ?: ToDoItem()
+        if (selectedToDo.id == todo.id)
+            _state.value = _state.value.copy(selectedToDo = todo)
+
+        // Liste updaten
         val currentList = _pState.value.toDoList
         // ist das todo schon in der Liste?
         val index = currentList.indexOfFirst { it.id == todo.id }
@@ -72,6 +78,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun removeFromList(todo: ToDoItem) {
+        // Auswahl zurücksetzen, wenn ausgewählter Termin gelöscht werden soll
+        val selectedToDo = _state.value.selectedToDo
+        if (selectedToDo == todo)
+            _state.value = _state.value.copy(selectedToDo = null)
+
+        // Liste updaten
         val currentList = _pState.value.toDoList
         // kopiere alle Elemente, die ungleich dem zu löschenden Element sind
         val updatedList = currentList.filterNot { it == todo }
@@ -81,6 +93,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun setCurrentToDo(todo: ToDoItem) {
         _state.value = _state.value.copy(currentToDo = todo)
     }
+
+    fun setSelectedToDo(todo: ToDoItem) {
+        _state.value = _state.value.copy(selectedToDo = todo)
+    }
+
 
 
     // Ab hier Helper Funktionen

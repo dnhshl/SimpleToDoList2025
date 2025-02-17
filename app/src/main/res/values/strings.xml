@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SimpleToDo</string>
+    <string name="app_name">SimpleTimer</string>
     <string name="mainScreenTitle">My ToDo List</string>
     <string name="mainScreenLabel">Home</string>
     <string name="screen2Title">Screen2</string>
@@ -19,4 +19,11 @@
     <string name="editToDoTitle">Edit ToDo</string>
     <string name="deleteLabel">lösche</string>
     <string name="editLabel">bearbeite</string>
+    <string name="timerScreenTitle">Timer</string>
+    <string name="timerScreenLabel">Timer</string>
+    <string name="enterDateLabel">Datum</string>
+    <string name="enterTimeLabel">Zeit</string>
+    <string name="timePickerDialogTitle">Wähle eine Zeit</string>
+    <string name="noToDoSelected">Bitte einen Termin auswählen!</string>
+    <string name="timeOver">Der Termin ist schon abgelaufen!</string>
 </resources>

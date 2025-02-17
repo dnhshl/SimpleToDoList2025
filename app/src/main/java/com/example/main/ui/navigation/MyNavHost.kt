@@ -10,6 +10,7 @@ import com.example.main.model.MainViewModel
 import com.example.main.ui.screens.EditToDoScreen
 import com.example.main.ui.screens.MainScreen
 import com.example.main.ui.screens.MyScreens
+import com.example.main.ui.screens.TimerScreen
 
 
 @Composable
@@ -26,6 +27,7 @@ fun MyNavHost(
     ) {
         // Screens via BottomBar und Fullscreens
         composable(MyScreens.Main.route) { MainScreen(viewModel, navController) }
+        composable(MyScreens.Timer.route) { TimerScreen(viewModel, navController) }
         composable(MyScreens.EditToDo.route) { EditToDoScreen(viewModel, navController) }
 
     }

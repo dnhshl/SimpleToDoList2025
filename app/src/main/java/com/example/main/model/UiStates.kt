@@ -1,6 +1,8 @@
 package com.example.main.model
 
 import kotlinx.serialization.Serializable
+import java.time.LocalDate
+import java.time.LocalTime
 import java.util.UUID
 
 
@@ -12,7 +14,9 @@ import java.util.UUID
 data class ToDoItem(
     val id: String = UUID.randomUUID().toString(), // a unique random string
     val title: String = "",       // title of the to do item
-    val subject: String = ""      // subject of the to do item
+    val subject: String = "",      // subject of the to do item
+    val dateString: String = LocalDate.now().format(dateFormatter),
+    val timeString: String = LocalTime.now().format(timeFormatter),
 )
 
 // Persistenter UI-Zustand
@@ -24,6 +28,7 @@ data class PersistantUiState(
 // Nicht persistenter UI-Zustand
 data class UiState(
     val currentToDo: ToDoItem = ToDoItem(),
+    val selectedToDo: ToDoItem? = null,
 )
 
 
