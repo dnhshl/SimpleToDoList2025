@@ -5,7 +5,6 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.dialog
 import com.example.main.model.MainViewModel
 import com.example.main.ui.screens.EditToDoScreen
 import com.example.main.ui.screens.MainScreen

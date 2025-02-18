@@ -4,14 +4,11 @@ package com.example.main.ui.screens
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Timelapse
 import androidx.compose.material.icons.filled.Timer
 import androidx.compose.material.icons.outlined.Home
-import androidx.compose.material.icons.outlined.Timelapse
 import androidx.compose.material.icons.outlined.Timer
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.example.main.R
-import java.security.KeyStore.TrustedCertificateEntry
 
 
 // hier "Verwaltungsinfo" zu allen Bildschirmen listen
