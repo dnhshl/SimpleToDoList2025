@@ -7,10 +7,10 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.0"
-composeBom = "2025.01.01"
-serialization = "1.5.1"
+composeBom = "2025.02.00"
+serialization = "1.6.3"
 datastore = "1.1.2"
-compose-navigation = "2.8.6"
+compose-navigation = "2.8.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
